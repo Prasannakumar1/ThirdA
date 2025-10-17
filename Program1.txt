@@ -1,0 +1,156 @@
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git init
+Reinitialized existing Git repository in
+D:/ProjectA/ThirdA/.git/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.name "Prasannakumar1"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.name
+Prasannakumar1
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.email "pkshivaraddi@gmail.com"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.email
+pkshivaraddi@gmail.com
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttpp
+ath=true
+init.defaultbranch=master
+user.email=pkshivaraddi@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttpp
+ath=true
+init.defaultbranch=master
+user.email=pkshivaraddi@gmail.com
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ touch add.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ ls
+README.md  add.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ touch hi.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/ma
+in'.
+
+Untracked files:
+  (use "git add <file>..." to include in
+what will be committed)
+        add.c
+        hi.txt
+
+nothing added to commit but untracked fil
+es present (use "git add" to track)
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git add add.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/ma
+in'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." t
+o unstage)
+        new file:   add.c
+
+Untracked files:
+  (use "git add <file>..." to include in
+what will be committed)
+        hi.txt
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git add hi.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/ma
+in'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." t
+o unstage)
+        new file:   add.c
+        new file:   hi.txt
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git commit -m "2 files add & hi added"
+[main 47e38f3] 2 files add & hi added
+ 2 files changed, 0 insertions(+), 0 dele
+tions(-)
+ create mode 100644 add.c
+ create mode 100644 hi.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by
+1 commit.
+  (use "git push" to publish your local c
+ommits)
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git pus origin main
+git: 'pus' is not a git command. See 'git
+ --help'.
+
+The most similar commands are
+        push
+        pull
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes |
+297.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pa
+ck-reused 0 (from 0)
+To https://github.com/Prasannakumar1/Thir
+dA.git
+   64cbe22..47e38f3  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$
