@@ -1,0 +1,241 @@
+
+Admin@DESKTOP-HGNLPEA MINGW64 ~ (master)
+$ cd D:
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d
+$ cd ProjectA
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA (master)
+$ cd ThirdA/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git init
+Reinitialized existing Git repository in
+D:/ProjectA/ThirdA/.git/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.name "Prasannakumar1"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --global user.email "pkshivaraddi@gmail.com"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttpp
+ath=true
+init.defaultbranch=master
+user.email=pkshivaraddi@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttpp
+ath=true
+init.defaultbranch=master
+user.email=pkshivaraddi@gmail.com
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ touch friday.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ ls
+Program1.txt  add.c       hi.txt
+README.md     friday.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/ma
+in'.
+
+Untracked files:
+  (use "git add <file>..." to include in
+what will be committed)
+        friday.txt
+
+nothing added to commit but untracked fil
+es present (use "git add" to track)
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git add .
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git commit -m "Friday file is created"
+[main 589eff9] Friday file is created
+ 1 file changed, 0 insertions(+), 0 delet
+ions(-)
+ create mode 100644 friday.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by
+1 commit.
+  (use "git push" to publish your local c
+ommits)
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 251 bytes |
+251.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pa
+ck-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), com
+pleted with 1 local object.
+To https://github.com/Prasannakumar1/Thir
+dA.git
+   4d69db1..589eff9  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git branch
+* main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git branch b1
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git branch b2
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git checkout b1
+Switched to branch 'b1'
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b1)
+$ vi sum.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b1)
+$ vi sub.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b1)
+$ git checkout b2
+Switched to branch 'b2'
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ git branch
+  b1
+* b2
+  main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ touch mul2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ touch  div2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ git add .
+warning: in the working copy of 'sub.c',
+LF will be replaced by CRLF the next time
+ Git touches it
+warning: in the working copy of 'sum.c',
+LF will be replaced by CRLF the next time
+ Git touches it
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ ls
+Program1.txt  div2.c      mul2.c
+README.md     friday.txt  sub.c
+add.c         hi.txt      sum.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ git merge b1
+Already up to date.
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (b2)
+$ git checkout main
+A       div2.c
+A       mul2.c
+A       sub.c
+A       sum.c
+Switched to branch 'main'
+Your branch is up to date with 'origin/ma
+in'.
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ ls
+Program1.txt  div2.c      mul2.c
+README.md     friday.txt  sub.c
+add.c         hi.txt      sum.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git add .
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git commit -m "4 files created from b1 & 2"
+[main 6fd1f44] 4 files created from b1 &
+2
+ 4 files changed, 2 insertions(+)
+ create mode 100644 div2.c
+ create mode 100644 mul2.c
+ create mode 100644 sub.c
+ create mode 100644 sum.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 384 bytes |
+384.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pa
+ck-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), com
+pleted with 1 local object.
+To https://github.com/Prasannakumar1/Thir
+dA.git
+   589eff9..6fd1f44  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git branch -d b2
+Deleted branch b2 (was 589eff9).
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$ git log
+commit 6fd1f44922246e8554532cd3c74b69b054
+commit 6fd1f44922246e8554532cd3c74b69b054
+87faaf (HEAD -> main, origin/main, origin
+/HEAD)
+Author: Prasannakumar1 <pkshivaraddi@gmai
+l.com>
+Date:   Fri Oct 24 14:58:36 2025 +0530
+
+    4 files created from b1 & 2
+
+commit 589eff9edf7199291b440b2d9167880e03
+0635a3 (b1)
+Author: Prasannakumar1 <pkshivaraddi@gmai
+l.com>
+Date:   Fri Oct 24 14:49:21 2025 +0530
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectA/ThirdA (main)
+$
