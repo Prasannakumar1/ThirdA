@@ -1,6 +1,1 @@
 index
-<<<<<<< Updated upstream
-modify index
-=======
-new index
->>>>>>> Stashed changes
