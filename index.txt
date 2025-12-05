@@ -1,2 +1,5 @@
+<<<<<<< Updated upstream
 index
+=======
+>>>>>>> Stashed changes
 new index
