@@ -1,5 +1,8 @@
 <<<<<<< Updated upstream
 index
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
 new index
+=======
+>>>>>>> parent of 7120c88 (index save)
